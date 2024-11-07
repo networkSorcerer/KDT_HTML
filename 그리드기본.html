@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 100px 100px 100px;
+      }
+      .grid-item {
+        background-color: royalblue;
+        color: white;
+      }
+      .grid-item:nth-child(2n) {
+        background-color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="grid-item">박스 1번</div>
+      <div class="grid-item">박스 2번</div>
+      <div class="grid-item">박스 3번</div>
+      <div class="grid-item">박스 4번</div>
+      <div class="grid-item">박스 5번</div>
+      <div class="grid-item">박스 6번</div>
+      <div class="grid-item">박스 7번</div>
+      <div class="grid-item">박스 8번</div>
+      <div class="grid-item">박스 9번</div>
+    </div>
+  </body>
+</html>
